@@ -221,10 +221,27 @@ p {
   display: flex;
   gap: 24px;
   justify-content: center;
-  padding-bottom: 120px;
+  padding-top: 120px;
+  }
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  
 }
 
-.feature-list-card {
+
+.customers-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding-bottom: 120px;
+ 
+}
+
+
+.team-card {
   width: calc((100% - 72px) / 4);
   background-color: #fff;
   border-radius: 0px 0px 4px 4px;
@@ -233,6 +250,15 @@ p {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   border-top: none;
 }
+
+.feature-list.item {
+  width: calc((100% - 72px) / 4);
+}
+
+.customers-list.icon {
+  width: calc((100% - 120px) / 6);
+}
+
 
 .second-header {
   padding-top: 120px;
@@ -250,6 +276,9 @@ p {
   padding-bottom: 120px;
 }
 
+.doing {
+  padding-bottom: 120px;
+}
 /* H3 */
 
 .subtitle {
@@ -278,6 +307,44 @@ p {
   background-color: #fff;
   border: 1px solid #e7e9fc;
   border-top: none;
+}
+
+/* !!!!svg!!! */
+
+.feature-icon {
+display: flex;
+width: 264px;
+height: 112px;
+align-items: center;
+justify-content: center;
+background-color: var(--light-mode-color);
+margin-bottom: 8px;
+}
+
+.customers-picture {
+  fill:#8E8F99;
+}
+
+.customers-icon:hover,
+.customers-icon:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.customers-icon:hover .customers-picture,
+.customers-icon:focus .customers-picture{
+fill: var(--accent-color);
+
+
+}
+
+.customers-icon {
+  display: flex;
+  width: 168px;
+  height: 88px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
 }
 
 /* H2 portfolio */
@@ -338,9 +405,6 @@ p {
   letter-spacing: 0.02em;
 }
 
-.item {
-  width: calc((100% - 72px) / 4);
-}
 
 /* Container */
 
